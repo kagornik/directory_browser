@@ -7,6 +7,9 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
+  "rules": {
+    "import/no-unresolved": "off"
+  },
   "plugins": ["react", "import", "react-hooks", "@typescript-eslint"],
   "parserOptions": {
     "ecmaVersion": 2018,
