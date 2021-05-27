@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../utils/hooks";
+import { fetchRootDirectoryFilesAsync } from "../api/rootDirectorySlice";
 import folderIcon from "../assets/folder_icon.png";
 import fileIcon from "../assets/file_icon.png";
 import imageIcon from "../assets/image_icon.png";
 
 const RootDirectory: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchRootDirectory());
-  // }, []);
+  useEffect(() => {
+    dispatch(fetchRootDirectoryFilesAsync());
+  }, []);
 
   return (
     <>

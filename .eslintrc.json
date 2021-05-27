@@ -8,7 +8,9 @@
     "prettier"
   ],
   "rules": {
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "plugins": ["react", "import", "react-hooks", "@typescript-eslint"],
   "parserOptions": {
