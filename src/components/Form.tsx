@@ -1,8 +1,10 @@
 import React from "react";
 import { truncateName } from "../utils/customFunction";
+import { formContainerStyles, formNameStyles } from "../styles/styles";
 
 interface FormProps {
   name: string;
+  //do poprawy
   icon: any;
   handleChangeDirectory: any;
 }
@@ -11,17 +13,10 @@ const Form: React.FC<FormProps> = ({ name, icon, handleChangeDirectory }) => {
   //   const dispatch = useAppDispatch();
 
   return (
-    <span
-      style={{
-        marginLeft: "46px",
-        marginTop: "25px",
-      }}
-    >
+    <div style={formContainerStyles} onClick={handleChangeDirectory || null}>
       <img src={icon} alt="Folder" />
-      <span style={{ color: "white" }} onClick={handleChangeDirectory || null}>
-        {truncateName(name)}
-      </span>
-    </span>
+      <span style={formNameStyles}>{truncateName(name)}</span>
+    </div>
   );
 };
 

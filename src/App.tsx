@@ -1,14 +1,8 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import RootDirectory from "./components/MainDirectory";
-// import { PATH_ROUTES } from "./routes/Routes";
+import Directory from "./components/Directory";
 
 const App: React.FC = () => {
-  return (
-    <Switch>
-      <Route path={"/"} exact component={RootDirectory} />
-    </Switch>
-  );
+  return <Directory />;
 };
 
 export default App;
