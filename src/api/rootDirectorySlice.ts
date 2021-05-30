@@ -25,8 +25,9 @@ export const rootDirectorySlice = createSlice({
 export const { setRootFiles } = rootDirectorySlice.actions;
 
 export const selectRootFiles = (state: RootState) => state.root.files;
+export const selectRootDirectory = (state: RootState) => state.root.directories;
 
-export const fetchRootDirectoryFilesAsync = (): AppThunk => (dispatch) => {
+export const fetchRootDirectory = (): AppThunk => (dispatch) => {
   fetch(
     "https://fnp5vd20r2.execute-api.us-east-1.amazonaws.com/dev/directories",
     {
