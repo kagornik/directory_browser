@@ -10,6 +10,7 @@ export interface File {
 export interface DirectoryState {
   name: string | null;
   id: string | null;
+  path: { id: string | null; name: string | null }[];
   files: File[];
   directories: Directory[];
 }
@@ -31,6 +32,6 @@ export interface FileProps {
 export interface PathItemProps {
   name: string;
   id: string;
-  //to fix
-  pathArray: any;
+  pathArray: { id: string | null; name: string | null }[];
+  index: number;
 }

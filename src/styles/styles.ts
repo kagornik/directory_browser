@@ -17,3 +17,7 @@ export const formNameStyles = {
   display: "block",
   marginTop: "12px",
 };
+
+export const pathItemStyles = {
+  color: "white",
+};
