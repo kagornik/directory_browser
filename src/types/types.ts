@@ -16,7 +16,7 @@ export interface DirectoryState {
 
 export interface DirectoryProps {
   name: string;
-  id: string | null;
+  id: string;
   //to fix
   icon: any;
   handleChangeDirectory: any;
@@ -26,4 +26,11 @@ export interface FileProps {
   name: string;
   //to fix
   icon: any;
+}
+
+export interface PathItemProps {
+  name: string;
+  id: string;
+  //to fix
+  pathArray: any;
 }
