@@ -1,8 +1,8 @@
 import React from "react";
-import Directory from "./components/Directory";
+import MainDirectory from "./components/MainDirectory";
 
 const App: React.FC = () => {
-  return <Directory />;
+  return <MainDirectory />;
 };
 
 export default App;

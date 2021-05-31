@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import rootDirectoryReducer from "./api/rootDirectorySlice";
+import DirectoryReducer from "./api/fetchDirectorySlice";
 
 export const store = configureStore({
   reducer: {
-    root: rootDirectoryReducer,
+    directory: DirectoryReducer,
   },
 });
 
