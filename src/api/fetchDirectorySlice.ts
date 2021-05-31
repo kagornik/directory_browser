@@ -22,7 +22,7 @@ export const directorySlice = createSlice({
   },
 });
 
-export const { setFiles } = directorySlice.actions;
+const { setFiles } = directorySlice.actions;
 
 export const fetchRootDirectory = (): AppThunk => (dispatch) => {
   fetch(
@@ -45,8 +45,7 @@ export const fetchDirectory =
   (directoryId: string): AppThunk =>
   (dispatch) => {
     fetch(
-      "https://fnp5vd20r2.execute-api.us-east-1.amazonaws.com/dev/directories/" +
-        directoryId,
+      `https://fnp5vd20r2.execute-api.us-east-1.amazonaws.com/dev/directories/${directoryId}`,
       {
         method: "GET",
       }

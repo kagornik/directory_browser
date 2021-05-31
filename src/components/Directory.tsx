@@ -3,7 +3,7 @@ import { truncateName } from "../utils/customFunction";
 import { formContainerStyles, formNameStyles } from "../styles/styles";
 import { DirectoryProps } from "../types/types";
 
-const Directory: React.FC<DirectoryProps> = ({
+export const Directory: React.FC<DirectoryProps> = ({
   name,
   icon,
   handleChangeDirectory,
@@ -19,5 +19,3 @@ const Directory: React.FC<DirectoryProps> = ({
     </div>
   );
 };
-
-export default Directory;
