@@ -73,7 +73,7 @@ export const fetchDirectory =
   };
 
 export const fetchDirectoryFromPath =
-  (directoryId: string): AppThunk =>
+  (directoryId: string | null): AppThunk =>
   (dispatch) => {
     fetch(
       `https://fnp5vd20r2.execute-api.us-east-1.amazonaws.com/dev/directories/${directoryId}`,

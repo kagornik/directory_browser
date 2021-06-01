@@ -10,10 +10,7 @@ export const Directory: React.FC<DirectoryProps> = ({
   id,
 }) => {
   return (
-    <div
-      style={formContainerStyles}
-      onClick={() => handleChangeDirectory(id) || null}
-    >
+    <div style={formContainerStyles} onClick={() => handleChangeDirectory(id)}>
       <img src={icon} alt="Folder" />
       <span style={formNameStyles}>{truncateName(name)}</span>
     </div>

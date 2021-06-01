@@ -10,17 +10,12 @@ export const Path: React.FC = () => {
     <div style={currentDirectoryPathStyles}>
       {path &&
         path.map(
-          (
-            //to fix
-            elment: any,
-            index: number
-          ) => (
+          (item: { id: string | null; name: string | null }, index: number) => (
             <PathItem
-              key={index}
-              //to fix
               index={index}
-              name={elment.name}
-              id={elment.id}
+              name={item.name}
+              key={item.id}
+              id={item.id}
               pathArray={path}
             />
           )

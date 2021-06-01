@@ -16,7 +16,7 @@ export const PathItem: React.FC<PathItemProps> = ({
     pathArray[0].name == name || pathArray[pathArray.length - 1].name == name;
 
   const secondCondition = pathArray[0].name == name;
-  const handleClickPath = (id: string, index: number) => {
+  const handleChangePath = (id: string | null, index: number) => {
     dispatch(removePath(index));
     dispatch(fetchDirectoryFromPath(id));
   };
@@ -26,7 +26,7 @@ export const PathItem: React.FC<PathItemProps> = ({
       <span
         style={pathItemStyles}
         onClick={() => {
-          handleClickPath(id, index);
+          handleChangePath(id, index);
         }}
       >
         {!firstCondition ? ` / ${name} / ` : name}
@@ -37,7 +37,7 @@ export const PathItem: React.FC<PathItemProps> = ({
       <span
         style={pathItemStyles}
         onClick={() => {
-          handleClickPath(id, index);
+          handleChangePath(id, index);
         }}
       >
         {secondCondition ? name : ` / ${name}`}
