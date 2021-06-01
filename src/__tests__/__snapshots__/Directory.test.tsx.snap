@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays a directory with given name and icon 1`] = `
+<div
+  onClick={[Function]}
+  style={
+    Object {
+      "display": "inline-block",
+      "margin": "40px 0 0 46px",
+      "textAlign": "center",
+      "width": "50px",
+    }
+  }
+>
+  <img
+    alt="Folder"
+    src="folder_icon.png"
+  />
+  <span
+    style={
+      Object {
+        "color": "white",
+        "display": "block",
+        "marginTop": "12px",
+      }
+    }
+  >
+    exampleD...
+  </span>
+</div>
+`;

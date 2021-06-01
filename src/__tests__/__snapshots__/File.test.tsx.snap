@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays a file with given name and icon 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "margin": "40px 0 0 46px",
+      "textAlign": "center",
+      "width": "50px",
+    }
+  }
+>
+  <img
+    alt="File"
+    src="image_icon.png"
+  />
+  <span
+    style={
+      Object {
+        "color": "white",
+        "display": "block",
+        "marginTop": "12px",
+      }
+    }
+  >
+    exampleName
+  </span>
+</div>
+`;

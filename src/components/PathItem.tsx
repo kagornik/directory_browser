@@ -1,6 +1,5 @@
 import React from "react";
-import { fetchDirectoryFromPath } from "../api/fetchDirectorySlice";
-import { removePath } from "../api/fetchDirectorySlice";
+import { fetchDirectoryFromPath, removePath } from "../api/directorySlice";
 import { useAppDispatch } from "../utils/hooks";
 import { PathItemProps } from "../types/types";
 import { pathItemStyles } from "../styles/styles";

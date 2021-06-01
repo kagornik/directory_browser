@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "./utils/hooks";
-import { fetchRootDirectory, fetchDirectory } from "./api/fetchDirectorySlice";
+import { fetchRootDirectory, fetchDirectory } from "./api/directorySlice";
 import { selectFiles, selectDirectories } from "./api/selectors";
 import { Path, File, Directory } from "./components";
 import folderIcon from "./assets/folder_icon.png";
