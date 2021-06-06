@@ -2,14 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+This website allows user to switch between directories and see their contents.
+
 ## Technologies
 
 - React<br />
 - Redux<br />
 - Jest<br />
 - TypeScript<br />
-
-I chose these technologies because I feel most comfortable in them and I wanted to present myself in the best possible way.
 
 ## Cloning and Running the Application
 
