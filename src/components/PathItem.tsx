@@ -35,6 +35,7 @@ export const PathItem: React.FC<PathItemProps> = ({
     return (
       <span
         style={pathItemStyles}
+        xdxdxdx
         onClick={() => {
           handleChangePath(id, index);
         }}
