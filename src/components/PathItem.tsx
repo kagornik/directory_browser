@@ -1,8 +1,8 @@
 import React from "react";
 import { fetchDirectoryFromPath, removePath } from "../api/directorySlice";
-import { useAppDispatch } from "../utils/hooks";
-import { PathItemProps } from "../types/types";
 import { pathItemStyles } from "../styles/styles";
+import { PathItemProps } from "../types/types";
+import { useAppDispatch } from "../utils/hooks";
 
 export const PathItem: React.FC<PathItemProps> = ({
   name,
@@ -35,7 +35,6 @@ export const PathItem: React.FC<PathItemProps> = ({
     return (
       <span
         style={pathItemStyles}
-        xdxdxdx
         onClick={() => {
           handleChangePath(id, index);
         }}
